@@ -31,7 +31,17 @@ public class Canvas implements Shape {
         return total_sq;
     }
 
-    public int canvLength() {
-        return shapes.length;
+    public int count() {
+
+        int counter = 0;
+        for (Shape shape : shapes) {
+            if (shape instanceof Canvas) {
+                counter += ((Canvas) shape).count();
+            } else {
+                counter++;
+            }
+        }
+        return counter;
     }
+
 }
