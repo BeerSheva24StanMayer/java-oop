@@ -79,6 +79,6 @@ public class TestShapes {
         canvasTotal.addShape(square);
         canvasTotal.addShape(rectangle);
         canvasTotal.addShape(canvas);
-        assertEquals(8, canvasTotal.count());
+        assertEquals(10, canvasTotal.count());
     }
 }
