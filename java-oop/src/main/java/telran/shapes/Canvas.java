@@ -37,10 +37,8 @@ public class Canvas implements Shape {
         for (Shape shape : shapes) {
             if (shape instanceof Canvas) {
                 counter += ((Canvas) shape).count();
-                counter++;
-            } else {
-                counter++;
             }
+            counter++;
         }
         return counter;
     }
